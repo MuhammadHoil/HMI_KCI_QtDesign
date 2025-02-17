@@ -358,7 +358,7 @@ QPushButton:pressed {
 }</string>
       </property>
       <property name="text">
-       <string>        DISPLAY MENU</string>
+       <string>        LCD DISPLAY MENU</string>
       </property>
       <property name="icon">
        <iconset>
@@ -509,10 +509,10 @@ QPushButton:pressed {
      <widget class="QFrame" name="left_sidecam_frame">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>30</y>
-        <width>425</width>
-        <height>240</height>
+        <x>32</x>
+        <y>55</y>
+        <width>405</width>
+        <height>220</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -529,8 +529,8 @@ QPushButton:pressed {
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>425</width>
-         <height>240</height>
+         <width>405</width>
+         <height>220</height>
         </rect>
        </property>
        <property name="font">
@@ -546,7 +546,7 @@ QPushButton:pressed {
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>TC LEFT SIDECAM CCTV</string>
+        <string>LEFT SIDECAM CCTV</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -556,10 +556,10 @@ color: rgb(255, 255, 255);</string>
      <widget class="QFrame" name="right_sidecam_frame">
       <property name="geometry">
        <rect>
-        <x>480</x>
-        <y>30</y>
-        <width>425</width>
-        <height>240</height>
+        <x>492</x>
+        <y>55</y>
+        <width>405</width>
+        <height>220</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -576,8 +576,8 @@ color: rgb(255, 255, 255);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>425</width>
-         <height>240</height>
+         <width>405</width>
+         <height>220</height>
         </rect>
        </property>
        <property name="font">
@@ -593,10 +593,269 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>TC RIGHT SIDECAM CCTV</string>
+        <string>RIGHT SIDECAM CCTV</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="choose_menu_frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>931</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(45, 45, 45, 250);
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="choose_menu_label">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>99</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 64);</string>
+       </property>
+       <property name="text">
+        <string>CHOOSE SIDECAM</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sidecam_tc1_button">
+       <property name="geometry">
+        <rect>
+         <x>178</x>
+         <y>5</y>
+         <width>120</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}
+
+QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}</string>
+       </property>
+       <property name="text">
+        <string>SIDECAM TC1</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sidecam_m1_1_button">
+       <property name="geometry">
+        <rect>
+         <x>328</x>
+         <y>5</y>
+         <width>120</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}</string>
+       </property>
+       <property name="text">
+        <string>SIDECAM M1-1</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sidecam_m2_3_button">
+       <property name="geometry">
+        <rect>
+         <x>478</x>
+         <y>5</y>
+         <width>120</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}</string>
+       </property>
+       <property name="text">
+        <string>SIDECAM M2-3</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sidecam_tc2_button">
+       <property name="geometry">
+        <rect>
+         <x>628</x>
+         <y>5</y>
+         <width>120</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}</string>
+       </property>
+       <property name="text">
+        <string>SIDECAM TC2</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
        </property>
       </widget>
      </widget>
