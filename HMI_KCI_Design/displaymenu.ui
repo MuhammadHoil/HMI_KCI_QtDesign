@@ -66,7 +66,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../material qt design/image/KAI Logo.png</pixmap>
+       <pixmap resource="material_qt_design/material_qt_design.qrc">:/material_qt_design/KAI Logo.png</pixmap>
       </property>
      </widget>
      <widget class="QLabel" name="restek_logo">
@@ -85,7 +85,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../material qt design/image/Restek Logo.png</pixmap>
+       <pixmap resource="material_qt_design/material_qt_design.qrc">:/material_qt_design/Restek Logo.png</pixmap>
       </property>
      </widget>
      <widget class="QLabel" name="date_time">
@@ -147,7 +147,7 @@ color: rgb(255, 255, 255);</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../material qt design/icon/menu.png</pixmap>
+       <pixmap resource="material_qt_design/material_qt_design.qrc">:/material_qt_design/menu.png</pixmap>
       </property>
      </widget>
      <widget class="QLabel" name="menu_label">
@@ -218,8 +218,8 @@ QPushButton:pressed {
        <string>        MAIN SYSTEM</string>
       </property>
       <property name="icon">
-       <iconset>
-        <normaloff>../../material qt design/icon/globe.png</normaloff>../../material qt design/icon/globe.png</iconset>
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/globe.png</normaloff>:/material_qt_design/globe.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -268,8 +268,8 @@ QPushButton:pressed {
        <string>        CONNECTION STATUS</string>
       </property>
       <property name="icon">
-       <iconset>
-        <normaloff>../../material qt design/icon/bar-chart-2.png</normaloff>../../material qt design/icon/bar-chart-2.png</iconset>
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/bar-chart-2.png</normaloff>:/material_qt_design/bar-chart-2.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -318,8 +318,8 @@ QPushButton:pressed {
        <string>        PECU STATUS</string>
       </property>
       <property name="icon">
-       <iconset>
-        <normaloff>../../material qt design/icon/phone.png</normaloff>../../material qt design/icon/phone.png</iconset>
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/phone.png</normaloff>:/material_qt_design/phone.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -359,8 +359,8 @@ QPushButton:pressed {
        <string>        LCD DISPLAY MENU</string>
       </property>
       <property name="icon">
-       <iconset>
-        <normaloff>../../material qt design/icon/monitor.png</normaloff>../../material qt design/icon/monitor.png</iconset>
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/monitor.png</normaloff>:/material_qt_design/monitor.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -409,8 +409,8 @@ QPushButton:pressed {
        <string>        ANNOUNCER MENU</string>
       </property>
       <property name="icon">
-       <iconset>
-        <normaloff>../../material qt design/icon/volume-2.png</normaloff>../../material qt design/icon/volume-2.png</iconset>
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/volume-2.png</normaloff>:/material_qt_design/volume-2.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -459,8 +459,8 @@ QPushButton:pressed {
        <string>        CCTV VIEW</string>
       </property>
       <property name="icon">
-       <iconset>
-        <normaloff>../../material qt design/icon/cctv.png</normaloff>../../material qt design/icon/cctv.png</iconset>
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/cctv.png</normaloff>:/material_qt_design/cctv.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -483,7 +483,7 @@ QPushButton:pressed {
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../material qt design/image/fasyah-halim-wZKVONqslkc-unsplash 1.png</pixmap>
+      <pixmap resource="material_qt_design/material_qt_design.qrc">:/material_qt_design/fasyah-halim-wZKVONqslkc-unsplash 1.png</pixmap>
      </property>
     </widget>
     <widget class="QFrame" name="content_frame">
@@ -690,7 +690,7 @@ border-radius: 0;</string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="runningtext_outdoor_header_2">
+     <widget class="QLabel" name="lcd_display_header">
       <property name="geometry">
        <rect>
         <x>475</x>
@@ -883,6 +883,8 @@ QPushButton:pressed {
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="material_qt_design/material_qt_design.qrc"/>
+ </resources>
  <connections/>
 </ui>
