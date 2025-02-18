@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/material_qt_design">
+        <file>bar-chart-2.png</file>
+        <file>cctv.png</file>
+        <file>celcius.png</file>
+        <file>fasyah-halim-wZKVONqslkc-unsplash 1.png</file>
+        <file>garis_batas.png</file>
+        <file>globe.png</file>
+        <file>KAI Logo.png</file>
+        <file>material_qt_design.qrc</file>
+        <file>menu.png</file>
+        <file>monitor.png</file>
+        <file>next-to.png</file>
+        <file>phone.png</file>
+        <file>Rectangle 6.png</file>
+        <file>Restek Logo.png</file>
+        <file>Speedometer frame 1.png</file>
+        <file>temperature.png</file>
+        <file>upload.png</file>
+        <file>volume-2.png</file>
+    </qresource>
+</RCC>
