@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ConnectionStatus</class>
- <widget class="QMainWindow" name="ConnectionStatus">
+ <class>CctvCabin</class>
+ <widget class="QMainWindow" name="CctvCabin">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -138,12 +138,12 @@ color: rgb(255, 255, 255);</string>
        <x>353</x>
        <y>60</y>
        <width>901</width>
-       <height>711</height>
+       <height>681</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(39, 39, 39, 193);
-border-radius: 15px;</string>
+border-radius: 0;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -151,6 +151,349 @@ border-radius: 15px;</string>
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
+     <widget class="QFrame" name="choose_menu_frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>618</y>
+        <width>901</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 127);
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="choose_menu_label">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>99</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 64);</string>
+       </property>
+       <property name="text">
+        <string>CHOOSE MENU</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cctv_tc1_button">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>10</y>
+         <width>321</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}
+
+QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}</string>
+       </property>
+       <property name="text">
+        <string>CCTV CABIN TC1</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cctv_tc2_button">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>10</y>
+         <width>321</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}</string>
+       </property>
+       <property name="text">
+        <string>CCTV CABIN TC2</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="cctv_2_cabin_frame">
+      <property name="geometry">
+       <rect>
+        <x>467</x>
+        <y>10</y>
+        <width>425</width>
+        <height>240</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(98, 97, 97, 193);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="cctv_2_cabin_label">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>425</width>
+         <height>240</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>CCTV CABIN CAM 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="cctv_1_cabin_frame">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>10</y>
+        <width>425</width>
+        <height>240</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(98, 97, 97, 193);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="cctv_1_cabin_label">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>425</width>
+         <height>240</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>CCTV CABIN CAM 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="cctv_3_cabin_frame">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>260</y>
+        <width>425</width>
+        <height>240</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(98, 97, 97, 193);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="cctv_3_cabin_label">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>425</width>
+         <height>240</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>CCTV CABIN CAM 3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="cctv_3_cabin_frame_2">
+      <property name="geometry">
+       <rect>
+        <x>467</x>
+        <y>260</y>
+        <width>425</width>
+        <height>240</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(98, 97, 97, 193);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="cctv_3_cabin_label_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>425</width>
+         <height>240</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>CCTV CABIN CAM 3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
     </widget>
     <widget class="QFrame" name="sidebar_frame">
      <property name="geometry">
@@ -282,7 +625,7 @@ QPushButton:pressed {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton:pressed {
+       <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -291,7 +634,7 @@ QPushButton:pressed {
 	padding-left: 20px;
 }
 
-QPushButton {
+QPushButton:pressed {
 	color: rgb(255, 255, 255);
 	background-color: rgb(28, 31, 91);
 	border: 1px solid rgb(255, 255, 255);
@@ -532,7 +875,7 @@ QPushButton:pressed {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton {
+       <string notr="true">QPushButton:pressed {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -541,7 +884,7 @@ QPushButton:pressed {
 	padding-left: 20px;
 }
 
-QPushButton:pressed {
+QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(28, 31, 91);
 	border: 1px solid rgb(255, 255, 255);

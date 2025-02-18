@@ -421,7 +421,7 @@ QPushButton:pressed {
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="cctv_button">
+     <widget class="QPushButton" name="cctv_passenger_button">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -458,7 +458,57 @@ QPushButton:pressed {
 }</string>
       </property>
       <property name="text">
-       <string>        CCTV VIEW</string>
+       <string>        CCTV PASSENGER</string>
+      </property>
+      <property name="icon">
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/cctv.png</normaloff>:/material_qt_design/cctv.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cctv_cabin_button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>596</y>
+        <width>285</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>        CCTV CABIN</string>
       </property>
       <property name="icon">
        <iconset resource="material_qt_design/material_qt_design.qrc">

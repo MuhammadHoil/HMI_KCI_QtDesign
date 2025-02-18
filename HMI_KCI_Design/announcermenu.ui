@@ -116,360 +116,6 @@ color: rgb(255, 255, 255);</string>
       </property>
      </widget>
     </widget>
-    <widget class="QFrame" name="sidebar_frame">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>40</y>
-       <width>325</width>
-       <height>765</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgba(39, 39, 39, 229);</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <widget class="QLabel" name="menu_logo">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>28</y>
-        <width>30</width>
-        <height>30</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="material_qt_design/material_qt_design.qrc">:/material_qt_design/menu.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="menu_label">
-      <property name="geometry">
-       <rect>
-        <x>66</x>
-        <y>14</y>
-        <width>68</width>
-        <height>58</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Cambria</family>
-        <pointsize>16</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>MENU</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="system_button">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>94</y>
-        <width>285</width>
-        <height>58</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(91, 55, 28);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}
-
-QPushButton:pressed {
-	color: rgb(255, 255, 255);
-	background-color: rgb(28, 31, 91);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}</string>
-      </property>
-      <property name="text">
-       <string>        MAIN SYSTEM</string>
-      </property>
-      <property name="icon">
-       <iconset resource="material_qt_design/material_qt_design.qrc">
-        <normaloff>:/material_qt_design/globe.png</normaloff>:/material_qt_design/globe.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="device_stat_button">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>178</y>
-        <width>285</width>
-        <height>58</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(91, 55, 28);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}
-
-QPushButton:pressed {
-	color: rgb(255, 255, 255);
-	background-color: rgb(28, 31, 91);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}</string>
-      </property>
-      <property name="text">
-       <string>        CONNECTION STATUS</string>
-      </property>
-      <property name="icon">
-       <iconset resource="material_qt_design/material_qt_design.qrc">
-        <normaloff>:/material_qt_design/bar-chart-2.png</normaloff>:/material_qt_design/bar-chart-2.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pecu_stat_button">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>262</y>
-        <width>285</width>
-        <height>58</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(91, 55, 28);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}
-
-QPushButton:pressed {
-	color: rgb(255, 255, 255);
-	background-color: rgb(28, 31, 91);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}</string>
-      </property>
-      <property name="text">
-       <string>        PECU STATUS</string>
-      </property>
-      <property name="icon">
-       <iconset resource="material_qt_design/material_qt_design.qrc">
-        <normaloff>:/material_qt_design/phone.png</normaloff>:/material_qt_design/phone.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="display_button">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>346</y>
-        <width>285</width>
-        <height>58</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(91, 55, 28);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}
-
-QPushButton:pressed {
-	color: rgb(255, 255, 255);
-	background-color: rgb(28, 31, 91);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}</string>
-      </property>
-      <property name="text">
-       <string>        LCD DISPLAY MENU</string>
-      </property>
-      <property name="icon">
-       <iconset resource="material_qt_design/material_qt_design.qrc">
-        <normaloff>:/material_qt_design/monitor.png</normaloff>:/material_qt_design/monitor.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="announcer_button">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>428</y>
-        <width>285</width>
-        <height>58</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(28, 31, 91);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}</string>
-      </property>
-      <property name="text">
-       <string>        ANNOUNCER MENU</string>
-      </property>
-      <property name="icon">
-       <iconset resource="material_qt_design/material_qt_design.qrc">
-        <normaloff>:/material_qt_design/volume-2.png</normaloff>:/material_qt_design/volume-2.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="cctv_button">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>512</y>
-        <width>285</width>
-        <height>58</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(91, 55, 28);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}
-
-QPushButton:pressed {
-	color: rgb(255, 255, 255);
-	background-color: rgb(28, 31, 91);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}</string>
-      </property>
-      <property name="text">
-       <string>        CCTV VIEW</string>
-      </property>
-      <property name="icon">
-       <iconset resource="material_qt_design/material_qt_design.qrc">
-        <normaloff>:/material_qt_design/cctv.png</normaloff>:/material_qt_design/cctv.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
-    </widget>
     <widget class="QLabel" name="body_bg_image">
      <property name="geometry">
       <rect>
@@ -1418,10 +1064,423 @@ QPushButton:pressed {
       </widget>
      </widget>
     </widget>
+    <widget class="QFrame" name="sidebar_frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>325</width>
+       <height>765</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(39, 39, 39, 229);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="menu_logo">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>28</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="material_qt_design/material_qt_design.qrc">:/material_qt_design/menu.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="menu_label">
+      <property name="geometry">
+       <rect>
+        <x>66</x>
+        <y>14</y>
+        <width>68</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>MENU</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="system_button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>94</y>
+        <width>285</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>        MAIN SYSTEM</string>
+      </property>
+      <property name="icon">
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/globe.png</normaloff>:/material_qt_design/globe.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="device_stat_button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>178</y>
+        <width>285</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>        CONNECTION STATUS</string>
+      </property>
+      <property name="icon">
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/bar-chart-2.png</normaloff>:/material_qt_design/bar-chart-2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pecu_stat_button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>262</y>
+        <width>285</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>        PECU STATUS</string>
+      </property>
+      <property name="icon">
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/phone.png</normaloff>:/material_qt_design/phone.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="display_button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>346</y>
+        <width>285</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>        LCD DISPLAY MENU</string>
+      </property>
+      <property name="icon">
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/monitor.png</normaloff>:/material_qt_design/monitor.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="announcer_button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>428</y>
+        <width>285</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>        ANNOUNCER MENU</string>
+      </property>
+      <property name="icon">
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/volume-2.png</normaloff>:/material_qt_design/volume-2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cctv_passenger_button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>512</y>
+        <width>285</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>        CCTV PASSENGER</string>
+      </property>
+      <property name="icon">
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/cctv.png</normaloff>:/material_qt_design/cctv.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cctv_cabin_button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>596</y>
+        <width>285</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: left;
+	padding-left: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>        CCTV CABIN</string>
+      </property>
+      <property name="icon">
+       <iconset resource="material_qt_design/material_qt_design.qrc">
+        <normaloff>:/material_qt_design/cctv.png</normaloff>:/material_qt_design/cctv.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
     <zorder>body_bg_image</zorder>
     <zorder>header_frame</zorder>
-    <zorder>sidebar_frame</zorder>
     <zorder>content_frame</zorder>
+    <zorder>sidebar_frame</zorder>
    </widget>
   </widget>
  </widget>
