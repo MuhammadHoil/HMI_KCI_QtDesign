@@ -91,13 +91,13 @@
        <pixmap resource="material_qt_design/material_qt_design.qrc">:/material_qt_design/Restek Logo.png</pixmap>
       </property>
      </widget>
-     <widget class="QLabel" name="date_time">
+     <widget class="QLabel" name="lblDate">
       <property name="geometry">
        <rect>
-        <x>565</x>
-        <y>3</y>
-        <width>150</width>
-        <height>35</height>
+        <x>490</x>
+        <y>0</y>
+        <width>121</width>
+        <height>41</height>
        </rect>
       </property>
       <property name="font">
@@ -112,10 +112,27 @@
 color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
-       <string>14 Feb 2025  |  15:04 WIB</string>
+       <string>14 Feb 2025</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblTime">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>10</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;15:04 WIB&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </widget>
@@ -1660,6 +1677,8 @@ border-radius: 15px;</string>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
+  <include location="material_qt_design/material_qt_design.qrc"/>
+  <include location="material_qt_design/material_qt_design.qrc"/>
   <include location="material_qt_design/material_qt_design.qrc"/>
  </resources>
  <connections/>

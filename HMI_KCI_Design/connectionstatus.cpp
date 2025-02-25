@@ -1,9 +1,10 @@
 #include "connectionstatus.h"
 #include "ui_connectionstatus.h"
 
-ConnectionStatus::ConnectionStatus(QWidget *parent) :
+ConnectionStatus::ConnectionStatus(WindowManager *mgr, QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::ConnectionStatus)
+    ui(new Ui::ConnectionStatus),
+    m_wndManager(mgr)
 {
     ui->setupUi(this);
 }
@@ -11,4 +12,9 @@ ConnectionStatus::ConnectionStatus(QWidget *parent) :
 ConnectionStatus::~ConnectionStatus()
 {
     delete ui;
+}
+
+void ConnectionStatus::hide()
+{
+    QMainWindow::hide();
 }

@@ -31,7 +31,8 @@ SOURCES += \
     pecustatus.cpp \
     displaymenu.cpp \
     announcermenu.cpp \
-    cctvview.cpp
+    cctvview.cpp \
+    windowmanager.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -39,7 +40,8 @@ HEADERS += \
     pecustatus.h \
     displaymenu.h \
     announcermenu.h \
-    cctvview.h
+    cctvview.h \
+    windowmanager.h
 
 FORMS += \
         mainwindow.ui \
@@ -53,3 +55,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    material_qt_design/material_qt_design.qrc

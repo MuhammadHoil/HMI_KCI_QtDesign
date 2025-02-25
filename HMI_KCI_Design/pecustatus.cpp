@@ -1,9 +1,10 @@
 #include "pecustatus.h"
 #include "ui_pecustatus.h"
 
-PecuStatus::PecuStatus(QWidget *parent) :
+PecuStatus::PecuStatus(WindowManager *mgr, QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::PecuStatus)
+    ui(new Ui::PecuStatus),
+    m_wndManager(mgr)
 {
     ui->setupUi(this);
 }
@@ -11,4 +12,9 @@ PecuStatus::PecuStatus(QWidget *parent) :
 PecuStatus::~PecuStatus()
 {
     delete ui;
+}
+
+void PecuStatus::hide()
+{
+    QMainWindow::hide();
 }
