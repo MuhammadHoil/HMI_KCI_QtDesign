@@ -2,6 +2,7 @@
 #define WINDOWMANAGER_H
 
 #include <QObject>
+#include "ioreader.h"
 
 class AnnouncerMenu;
 class CctvView;
@@ -34,6 +35,8 @@ private:
     DisplayMenu *m_wndDisplay;
     MainWindow *m_wndHMI;
     PecuStatus *m_wndPecu;
+
+    IOReader m_ioReader;
 };
 
 #endif // WINDOWMANAGER_H

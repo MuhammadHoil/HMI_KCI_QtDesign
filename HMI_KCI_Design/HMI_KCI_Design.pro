@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql network multimedia multimediawidgets webenginewidgets serialbus serialbus serialport positioning
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -32,7 +32,8 @@ SOURCES += \
     displaymenu.cpp \
     announcermenu.cpp \
     cctvview.cpp \
-    windowmanager.cpp
+    windowmanager.cpp \
+    ioreader.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -41,7 +42,8 @@ HEADERS += \
     displaymenu.h \
     announcermenu.h \
     cctvview.h \
-    windowmanager.h
+    windowmanager.h \
+    ioreader.h
 
 FORMS += \
         mainwindow.ui \
@@ -58,3 +60,14 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     material_qt_design/material_qt_design.qrc
+
+# Tambahkan path ke VLC-Qt
+INCLUDEPATH += /usr/local/include
+LIBS += -L/usr/local/lib -lVLCQtCore -lVLCQtWidgets -lVLCQtQml
+
+CONFIG += link_pkgconfig
+PKGCONFIG += libVLCQtCore libVLCQtWidgets
+
+DISTFILES += \
+    ../config/Respati/pids-hmi.conf
+

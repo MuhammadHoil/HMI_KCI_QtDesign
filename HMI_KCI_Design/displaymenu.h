@@ -28,6 +28,8 @@ private:
     Ui::DisplayMenu *ui;
     WindowManager *m_wndManager;
     QTimer *m_timer;
+
+    void initSignalConnection();
 };
 
 #endif // DISPLAYMENU_H

@@ -28,6 +28,8 @@ private:
     Ui::PecuStatus *ui;
     WindowManager *m_wndManager;
     QTimer *m_timer;
+
+    void initSignalConnection();
 };
 
 #endif // PECUSTATUS_H

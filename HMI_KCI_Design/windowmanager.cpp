@@ -5,6 +5,7 @@
 #include "displaymenu.h"
 #include "pecustatus.h"
 #include "connectionstatus.h"
+#include "ioreader.h"
 
 WindowManager::WindowManager(QObject *parent) : QObject (parent)
 {
@@ -24,6 +25,7 @@ WindowManager::~WindowManager()
 void WindowManager::showMainWindow()
 {
     m_wndHMI -> showFullScreen();
+    m_ioReader.start();
 }
 
 void WindowManager::onBtnAnnouncerClick()

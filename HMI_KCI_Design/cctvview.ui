@@ -88,13 +88,13 @@
        <pixmap resource="material_qt_design/material_qt_design.qrc">:/material_qt_design/Restek Logo.png</pixmap>
       </property>
      </widget>
-     <widget class="QLabel" name="date_time">
+     <widget class="QLabel" name="lblDate">
       <property name="geometry">
        <rect>
-        <x>565</x>
-        <y>3</y>
+        <x>490</x>
+        <y>0</y>
         <width>150</width>
-        <height>35</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="font">
@@ -109,10 +109,27 @@
 color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
-       <string>14 Feb 2025  |  15:04 WIB</string>
+       <string>14 Feb 2025</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblTime">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>0</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;15:04 WIB&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </widget>
@@ -181,8 +198,8 @@ border-radius: 0;</string>
        </property>
        <property name="font">
         <font>
-         <family>Cambria</family>
-         <pointsize>16</pointsize>
+         <family>DejaVu Serif</family>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -201,135 +218,40 @@ background-color: rgba(0, 0, 0, 64);</string>
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QPushButton" name="cctv_m2_2_button">
+      <widget class="QWidget" name="horizontalLayoutWidget">
        <property name="geometry">
         <rect>
-         <x>175</x>
-         <y>70</y>
-         <width>100</width>
-         <height>50</height>
+         <x>100</x>
+         <y>0</y>
+         <width>651</width>
+         <height>61</height>
         </rect>
        </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(91, 55, 28);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: center;
-	white-space: normal;
-}
-
-QPushButton:pressed {
-	color: rgb(255, 255, 255);
-	background-color: rgb(28, 31, 91);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: center;
-	white-space: normal;
-}</string>
-       </property>
-       <property name="text">
-        <string>CCTV M2-2</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="cctv_t3_button">
-       <property name="geometry">
-        <rect>
-         <x>285</x>
-         <y>70</y>
-         <width>100</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(91, 55, 28);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: center;
-	white-space: normal;
-}
-
-QPushButton:pressed {
-	color: rgb(255, 255, 255);
-	background-color: rgb(28, 31, 91);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: center;
-	white-space: normal;
-}</string>
-       </property>
-       <property name="text">
-        <string>CCTV T3</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="cctv_tc1_button">
-       <property name="geometry">
-        <rect>
-         <x>175</x>
-         <y>10</y>
-         <width>100</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton:pressed {
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="cctv_tc1_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton:pressed {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -346,42 +268,42 @@ QPushButton {
 	text-align: center;
 	white-space: normal;
 }</string>
-       </property>
-       <property name="text">
-        <string>CCTV TC1</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="cctv_t1_1_button">
-       <property name="geometry">
-        <rect>
-         <x>395</x>
-         <y>70</y>
-         <width>100</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>TC1</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_m1_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -398,42 +320,42 @@ QPushButton:pressed {
 	text-align: center;
 	white-space: normal;
 }</string>
-       </property>
-       <property name="text">
-        <string>CCTV T1'</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="cctv_m1_button">
-       <property name="geometry">
-        <rect>
-         <x>285</x>
-         <y>10</y>
-         <width>100</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>M1-1</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_m2_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -450,42 +372,42 @@ QPushButton:pressed {
 	text-align: center;
 	white-space: normal;
 }</string>
-       </property>
-       <property name="text">
-        <string>CCTV M1-1</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="cctv_m1_3_button">
-       <property name="geometry">
-        <rect>
-         <x>505</x>
-         <y>70</y>
-         <width>100</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>M2-1</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_t1_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -502,42 +424,42 @@ QPushButton:pressed {
 	text-align: center;
 	white-space: normal;
 }</string>
-       </property>
-       <property name="text">
-        <string>CCTV M1-3</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="cctv_m2_button">
-       <property name="geometry">
-        <rect>
-         <x>395</x>
-         <y>10</y>
-         <width>100</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>T1</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_t2_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -554,42 +476,42 @@ QPushButton:pressed {
 	text-align: center;
 	white-space: normal;
 }</string>
-       </property>
-       <property name="text">
-        <string>CCTV M2-1</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="cctv_m2_3_button">
-       <property name="geometry">
-        <rect>
-         <x>615</x>
-         <y>70</y>
-         <width>100</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>T2</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_m1_2_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -606,42 +528,54 @@ QPushButton:pressed {
 	text-align: center;
 	white-space: normal;
 }</string>
-       </property>
-       <property name="text">
-        <string>CCTV M2-3</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
+          </property>
+          <property name="text">
+           <string>M1-2</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
-      <widget class="QPushButton" name="cctv_t1_button">
+      <widget class="QWidget" name="horizontalLayoutWidget_2">
        <property name="geometry">
         <rect>
-         <x>505</x>
-         <y>10</y>
-         <width>100</width>
-         <height>50</height>
+         <x>100</x>
+         <y>71</y>
+         <width>651</width>
+         <height>61</height>
         </rect>
        </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="cctv_m2_2_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -658,42 +592,42 @@ QPushButton:pressed {
 	text-align: center;
 	white-space: normal;
 }</string>
-       </property>
-       <property name="text">
-        <string>CCTV T1</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="cctv_tc2_button">
-       <property name="geometry">
-        <rect>
-         <x>725</x>
-         <y>70</y>
-         <width>100</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>M2-2</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_t3_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -710,42 +644,42 @@ QPushButton:pressed {
 	text-align: center;
 	white-space: normal;
 }</string>
-       </property>
-       <property name="text">
-        <string>CCTV TC2</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="cctv_t2_button">
-       <property name="geometry">
-        <rect>
-         <x>615</x>
-         <y>10</y>
-         <width>100</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>T3</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_t1_1_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -762,42 +696,42 @@ QPushButton:pressed {
 	text-align: center;
 	white-space: normal;
 }</string>
-       </property>
-       <property name="text">
-        <string>CCTV T2</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="cctv_m1_2_button">
-       <property name="geometry">
-        <rect>
-         <x>725</x>
-         <y>10</y>
-         <width>100</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>T1'</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_m1_3_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(91, 55, 28);
 	border: 1px solid rgb(255, 255, 255);
@@ -814,117 +748,246 @@ QPushButton:pressed {
 	text-align: center;
 	white-space: normal;
 }</string>
-       </property>
-       <property name="text">
-        <string>CCTV M1-2</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
+          </property>
+          <property name="text">
+           <string>M1-3</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_m2_3_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}</string>
+          </property>
+          <property name="text">
+           <string>M2-3</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_tc2_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}</string>
+          </property>
+          <property name="text">
+           <string>TC2</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
-     </widget>
-     <widget class="QFrame" name="right_sidecam_frame">
-      <property name="geometry">
-       <rect>
-        <x>467</x>
-        <y>10</y>
-        <width>425</width>
-        <height>240</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgba(98, 97, 97, 193);</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <widget class="QLabel" name="right_sidecam_label">
+      <widget class="QWidget" name="verticalLayoutWidget">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>425</width>
-         <height>240</height>
+         <x>759</x>
+         <y>-1</y>
+         <width>141</width>
+         <height>131</height>
         </rect>
        </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>16</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>CCTV CAM 2</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QFrame" name="left_sidecam_frame">
-      <property name="geometry">
-       <rect>
-        <x>7</x>
-        <y>10</y>
-        <width>425</width>
-        <height>240</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgba(98, 97, 97, 193);</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <widget class="QLabel" name="left_sidecam_label">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>425</width>
-         <height>240</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Cambria</family>
-         <pointsize>16</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>CCTV CAM 1</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="cctv_cabin_tc1_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}</string>
+          </property>
+          <property name="text">
+           <string>CABIN TC1</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cctv_cabin_tc2_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(91, 55, 28);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(28, 31, 91);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	text-align: center;
+	white-space: normal;
+}</string>
+          </property>
+          <property name="text">
+           <string>CABIN TC2</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
      </widget>
      <widget class="QLabel" name="pecu_status_header">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>300</y>
+        <y>400</y>
         <width>880</width>
         <height>35</height>
        </rect>
@@ -952,7 +1015,7 @@ border-radius: 15px;</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>345</y>
+        <y>445</y>
         <width>430</width>
         <height>30</height>
        </rect>
@@ -980,7 +1043,7 @@ border-radius: 15px;</string>
       <property name="geometry">
        <rect>
         <x>460</x>
-        <y>345</y>
+        <y>445</y>
         <width>430</width>
         <height>30</height>
        </rect>
@@ -1008,7 +1071,7 @@ border-radius: 15px;</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>380</y>
+        <y>480</y>
         <width>430</width>
         <height>55</height>
        </rect>
@@ -1036,7 +1099,7 @@ border-radius: 15px;</string>
       <property name="geometry">
        <rect>
         <x>460</x>
-        <y>380</y>
+        <y>480</y>
         <width>430</width>
         <height>55</height>
        </rect>
@@ -1050,15 +1113,26 @@ border-radius: 15px;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgba(222, 0, 4, 178);
+       <string notr="true">background-color: rgba(13, 255, 0, 178);
 border-radius: 15px;</string>
       </property>
       <property name="text">
-       <string>IN CALL</string>
+       <string>READY</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>881</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="camera_grid"/>
      </widget>
     </widget>
     <widget class="QFrame" name="sidebar_frame">
@@ -1184,8 +1258,8 @@ QPushButton:pressed {
       </property>
       <property name="font">
        <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
+        <family>DejaVu Serif</family>
+        <pointsize>10</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1284,8 +1358,8 @@ QPushButton:pressed {
       </property>
       <property name="font">
        <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
+        <family>DejaVu Serif</family>
+        <pointsize>10</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1334,8 +1408,8 @@ QPushButton:pressed {
       </property>
       <property name="font">
        <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
+        <family>DejaVu Serif</family>
+        <pointsize>10</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1423,65 +1497,31 @@ QPushButton {
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="cctv_cabin_button">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>596</y>
-        <width>285</width>
-        <height>58</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(91, 55, 28);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}
-
-QPushButton:pressed {
-	color: rgb(255, 255, 255);
-	background-color: rgb(28, 31, 91);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}</string>
-      </property>
-      <property name="text">
-       <string>        CCTV CABIN</string>
-      </property>
-      <property name="icon">
-       <iconset resource="material_qt_design/material_qt_design.qrc">
-        <normaloff>:/material_qt_design/cctv.png</normaloff>:/material_qt_design/cctv.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>750</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
     </widget>
     <zorder>body_bg_image</zorder>
     <zorder>header_frame</zorder>
     <zorder>content_frame</zorder>
     <zorder>sidebar_frame</zorder>
+    <zorder>pushButton</zorder>
    </widget>
   </widget>
  </widget>
  <resources>
+  <include location="material_qt_design/material_qt_design.qrc"/>
+  <include location="material_qt_design/material_qt_design.qrc"/>
   <include location="material_qt_design/material_qt_design.qrc"/>
  </resources>
  <connections/>
