@@ -7,16 +7,29 @@ namespace Ui {
 class PecuStatus;
 }
 
+class WindowManager;
+class QTimer;
+
 class PecuStatus : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit PecuStatus(QWidget *parent = nullptr);
+    explicit PecuStatus(WindowManager *mgr, QWidget *parent = nullptr);
     ~PecuStatus();
+
+public slots:
+    void hide();
+
+private slots:
+    void updateTime();
 
 private:
     Ui::PecuStatus *ui;
+    WindowManager *m_wndManager;
+    QTimer *m_timer;
+
+    void initSignalConnection();
 };
 
 #endif // PECUSTATUS_H

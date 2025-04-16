@@ -88,13 +88,13 @@
        <pixmap resource="material_qt_design/material_qt_design.qrc">:/material_qt_design/Restek Logo.png</pixmap>
       </property>
      </widget>
-     <widget class="QLabel" name="date_time">
+     <widget class="QLabel" name="lblDate">
       <property name="geometry">
        <rect>
-        <x>565</x>
-        <y>3</y>
+        <x>480</x>
+        <y>0</y>
         <width>150</width>
-        <height>35</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="font">
@@ -109,10 +109,27 @@
 color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
-       <string>14 Feb 2025  |  15:04 WIB</string>
+       <string>14 Feb 2025</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblTime">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>0</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;15:04 WIB&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </widget>
@@ -275,8 +292,8 @@ QPushButton:pressed {
       </property>
       <property name="font">
        <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
+        <family>DejaVu Serif</family>
+        <pointsize>10</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -375,8 +392,8 @@ QPushButton:pressed {
       </property>
       <property name="font">
        <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
+        <family>DejaVu Serif</family>
+        <pointsize>10</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -425,8 +442,8 @@ QPushButton:pressed {
       </property>
       <property name="font">
        <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
+        <family>DejaVu Serif</family>
+        <pointsize>10</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -514,56 +531,6 @@ QPushButton:pressed {
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="cctv_cabin_button">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>596</y>
-        <width>285</width>
-        <height>58</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Cambria</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(91, 55, 28);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}
-
-QPushButton:pressed {
-	color: rgb(255, 255, 255);
-	background-color: rgb(28, 31, 91);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 8px;
-	text-align: left;
-	padding-left: 20px;
-}</string>
-      </property>
-      <property name="text">
-       <string>        CCTV CABIN</string>
-      </property>
-      <property name="icon">
-       <iconset resource="material_qt_design/material_qt_design.qrc">
-        <normaloff>:/material_qt_design/cctv.png</normaloff>:/material_qt_design/cctv.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
     </widget>
     <zorder>body_bg_image</zorder>
     <zorder>header_frame</zorder>
@@ -573,6 +540,8 @@ QPushButton:pressed {
   </widget>
  </widget>
  <resources>
+  <include location="material_qt_design/material_qt_design.qrc"/>
+  <include location="material_qt_design/material_qt_design.qrc"/>
   <include location="material_qt_design/material_qt_design.qrc"/>
  </resources>
  <connections/>

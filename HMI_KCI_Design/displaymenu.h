@@ -7,16 +7,29 @@ namespace Ui {
 class DisplayMenu;
 }
 
+class WindowManager;
+class QTimer;
+
 class DisplayMenu : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit DisplayMenu(QWidget *parent = nullptr);
+    explicit DisplayMenu(WindowManager *mgr, QWidget *parent = nullptr);
     ~DisplayMenu();
+
+public slots:
+    void hide();
+
+private slots:
+    void updateTime();
 
 private:
     Ui::DisplayMenu *ui;
+    WindowManager *m_wndManager;
+    QTimer *m_timer;
+
+    void initSignalConnection();
 };
 
 #endif // DISPLAYMENU_H
